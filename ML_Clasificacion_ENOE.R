@@ -28,7 +28,7 @@ datost3<-read.csv("t305.csv",sep=",",header = T)
 datost4<-read.csv("t405.csv",sep=",",header = T)
 
 # Se unen todos los trimestres
-datos<-rbind(datost1,,datost2,datost3,datost4)
+datos<-rbind(datost1,datost2,datost3,datost4)
 datos <- datos %>%
   mutate_all(as.factor)
 
